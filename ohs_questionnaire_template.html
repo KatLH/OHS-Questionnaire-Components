@@ -130,8 +130,8 @@
         margin: 10px 0;
     }
 
-    /* Unordered list format */
-    ul {
+    /* List format */
+    ul, ol {
         margin: 20px 0;
     }
 
@@ -166,56 +166,122 @@
 
 
 <main>
+    <p class="para bold">[ OHS Questionnaire Style Guide & Code Template ]</p>
+
+    <h2>How to Use This Code Template</h2>
+
+    <ol>
+        <li>
+            Download the <span class="bold blue">OHS Questionnaire code template</span>.
+            <ul>
+                <li><a href="https://github.com/KatLH/ohs_questionnaires.git">Download from GitHub</a></li>
+                <li><a href="https://codepen.io/kiwiCantoloupe/pen/LYYaojv">Download from CodePen</a></li>
+            </ul>
+        </li>
+        <li>Copy desired elements from the code template.</li>
+        <li>Paste them into your code editor.</li>
+    </ol>
+
+
+    <p class="para">For further reference, please refer to the Google Doc "<a href="https://docs.google.com/document/d/1jZ02h09i46yAc0DmaMtF11gjEd8O5z9tvV7paOqzm_E/edit?ts=5dbaeb30&pli=1">Style Guide for Questionnaires</a>".</p>
+    <hr>
+
+    <!-------------------------------------------->
+
+    <p class="para bold">[ Emphasized Text Style Guide ]</p>
+    <ul>
+        <li>
+            <span class="bold red">Alert</span> or <span class="bold red italic">Alert</span>
+            <ul>
+                <li><span class="red">.red</span> | <span class="bold">.bold</span> | optional: <span class="italic">.italic</span></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="red">Emphasized Text - High Priority</span>
+            <ul>
+                <li><span class="red">.red</span></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="bold blue">Emphasized Text - Default</span>
+            <ul>
+                <li><span class="blue">.blue</span> | <span class="bold">.bold</span></li>
+            </ul>
+        </li>
+
+        <li>
+            <span class="italic">Emphasized Text - Low Priority</span>
+            <ul>
+                <li><span class="italic">.italic</span></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+
+    <!-------------------------------------------->
+    
+    <p class="para bold">[ .tab Class Examples ]</p>
+    
+    <ol>
+        <li>Visit the <span class="tab">Action Center</span>.</li>
+    
+        <li>View your questionnaires in the <span class="tab">Home</span> tab.</li>
+    
+        <li>Send a message through the <span class="tab">Chat</span> tab.</li>
+    
+        <li>Find your scheduled appointments in the <span class="tab">Calendar</span> tab.</li>
+    
+        <li>You can find it located in the <span class="tab">Resources</span> tab.</li>
+    </ol>
+    <hr>
+
+    <!-------------------------------------------->
+
+    <p class="para bold">[ Typography Example ]</p>
+
     <!--Title-->
     <h2>OrthoHealth Systems Patient Journey</h2>
 
     <!--Subtitle-->
-    <h3>Learn More About the Patient Journey</h3> 
+    <h3>How Does the OrthoHealth System Work?</h3> 
 
     <!--Paragraph-->
-    <p class="para">Paragraph Text</p>
+    <p class="para">This program will help guide you to complete recovery, regardless of your starting position. The <span class="bold blue">OrthoHealth System</span> was designed to be safe, simple and effective - with you, being the center of every decision.</p>
+    
+    <p class="para">While the <span class="bold blue">OrthoHealth System</span> personalizes every decision based on your <span class="bold blue">Digital Patient Profile</span>, this app will deliver any activities, education, surveys or messages directly to your <span class="tab">Action Center</span>.</p>
+
+    <p class="para">To learn more about the six phases of the <span class="bold blue">OrthoHealth System Patient Journey</span>, continue on.</p>
+
+    <p class="para"><span class="bold red">If you are having a medical emergency, <span class="italic">please contact your doctor.</span></span></p>
     <hr>
 
-<!-------------------------------------------->
+    <!-------------------------------------------->
 
-    <!--Text styling class exmaples-->
-    <p class="para bold">[ Text Styling Classes ]</p>
+    <p class="para bold">[ Text Box Example ]</p>
 
-    <ul>
-        <li><span class="blue">blue</span></li>
-        <li><span class="red">red</span></li>
-    </ul>
+    <div id="survey_body" style="padding: 20px;">
+        <h2>What are the symptoms of Degenerative Joint Disease?</h2>
 
-    <ul>
-        <li><span class="bold blue">bold blue</span></li>
-        <li><span class="bold red">bold red</span></li>
-    </ul>
+        <div class="whiteTextBox">
+            <p class="para bold">[ .whiteTextBox Class Example ]</p>
 
-    <ul>
-        <li><span class="italic blue">italic blue</span></li>
-        <li><span class="italic red">italic red</span></li>
-    </ul>
+            <p class="para"><span class="bold blue">Symptoms may range from mild to disabling</span>. A joint affected by <span class="bold blue">DJD</span> may be painful and inflamed. Without cartilage, bones rub directly against each other as the joint moves.</p>
 
-    <ul>
-        <li><span class="bold">bold</span></li>
-        <li><span class="italic">italic</span></li>
-        <li><span class="bold italic">bold italic</span></li>
-    </ul>
+            <p class="para"><span class="bold blue">Pain, or a dull ache develops gradually over time</span>. Pain is notably worse in the morning upon rising and initial movement(s).</p>
+        </div>
+
+        <div class="clearTextBox">
+            <p class="para bold">[ .clearTextBox Class Example ]</p>
+
+            <p class="para"><span class="bold blue">Vigorous activity may cause pain to flare up</span>. The joint may stiffen and look swollen or enlarged. Joint movements such as <span class="italic">bending</span>, <span class="italic">straightening</span> and <span class="italic">rotation</span> may become more difficult and loss of motion may follow.</p>
+        </div>
+    </div>
     <hr>
 
-<!-------------------------------------------->
-
-    <!--.tab class examples-->
-    <p class="para bold">[ .tab Class Examples ]</p>
-
-    <p class="para">Visit the <span class="tab">Home</span> tab.</p>
-
-    <p class="para">You can find that located in the <span class="tab">Resources</span> tab.</p>
-    <hr>
-
-<!-------------------------------------------->
-
-    <!--Accordion HTML-->
+    <!-------------------------------------------->
+    
     <p class="para bold">[ Accordion Example ]</p>
 
     <!--Panel #1-->
@@ -223,7 +289,9 @@
 
     <div class="panels">
         <div class="panelPad">
-            <p>Panel Text</p>
+            <p>Panel Paragraph #1</p>
+            <p>Panel Paragraph #2</p>
+            <p>Panel Paragraph #3</p>
         </div>
     </div>
 
@@ -232,7 +300,9 @@
 
     <div class="panels">
         <div class="panelPad">
-            <p>Panel Text</p>
+            <p>Panel Paragraph #1</p>
+            <p>Panel Paragraph #2</p>
+            <p>Panel Paragraph #3</p>
         </div>
     </div>
 
@@ -241,15 +311,24 @@
 
     <div class="panels">
         <div class="panelPad">
-            <p>Panel Text</p>
+            <p>Panel Paragraph #1</p>
+            <p>Panel Paragraph #2</p>
+            <p>Panel Paragraph #3</p>
         </div>
     </div>
+    <hr>
 </main>
+
+
+<br>
+<footer style="background-color: #eceff1; padding: 5px 20px;">
+    <p class="para"><span class="bold italic">OHS Questionnaire Style Guide & Code Template</span> &copy Last Updated: Nov 21, 2019</p>
+</footer>
 
 <!-------------------------------------------->
 
-<!--Accordion JavaScript-->
 <script>
+    // Accordion JavaScript
     var acc = document.getElementsByClassName("accordion");
     var i;
 
