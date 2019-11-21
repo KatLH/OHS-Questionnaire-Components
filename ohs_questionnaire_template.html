@@ -1,0 +1,243 @@
+<style>
+    /* ACCORDIAN STYLES */
+    .accordion {
+        background-color: #F4F4F4;
+        color: #363C81;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+
+    .accordion:hover {
+        font-size: 19px;
+        transition: 0.5s;
+        color: #363C81;
+        background-color: #E2E2E2;
+    }
+
+    .activeText {
+        color: #363C81;
+        background-color: #E2E2E2;
+        font-size: 19px;
+    }
+
+    .accordion:after {
+        content: "\002B";
+        color: #2AACE2;
+        font-weight: bold;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .activeText:after {
+        content: "\2212";
+    }
+
+    .panels {
+        padding: 0px 20px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        font-size: 18px;
+        transition: 0.2s ease-out;
+        border-bottom: .4px solid #d7d7d7;
+        border-top: .4px solid #d7d7d7;
+    }
+
+    .panelPad {
+        padding: 20px 0;
+    }
+
+    .panels p {
+        margin: 5px 0;
+    }
+
+    /* GENERAL STYLES */
+    /* Background image */
+    #survey_body {
+        background: url(https://img.freepik.com/free-photo/black-white-bamboo-surface-merge-background_7182-2053.jpg?size=626&ext=jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    /* Surround body content with main tag */
+    main {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    /* Title */
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: rgb(8, 82, 148);
+        margin: 0 0 20px 0;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    /* Subtitle */
+    h3 {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 20px 0;
+        color: rgb(99, 74, 165);
+    }
+
+    /* Paragraph */
+    .para {
+        margin: 20px 0;
+    }
+
+    /* White background for text that is hard to read with the current background */
+    .whiteTextBox {
+        background-color: white; 
+        margin: 10px 0;
+        padding: 5px 20px; 
+        border-radius: 4px; 
+        box-shadow: 0px 10px 14px -8px rgba(97, 95, 97, .5);
+    }
+
+    /* Text box that formats text the same way as .whiteTextBox, but without a background color */
+    .clearTextBox {
+        margin: 10px 0;
+        padding: 5px 20px; 
+    }
+
+    /* iframe video format */
+    iframe {
+        margin: 10px 0;
+    }
+
+    /* Image format without box shadow */
+    .img {
+        margin: 10px 0;
+    }
+
+    /* Image format with box shadow */
+    .img-shadow {
+        box-shadow: 0px 10px 14px -8px rgba(97, 95, 97, 1);
+        margin: 10px 0;
+    }
+
+    /* Unordered list format */
+    ul {
+        margin: 20px 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    /* Text style for when a navbar item is mentioned */
+    .tab {
+        color: rgb(99, 74, 165);
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    /* TEXT STYLES - Apply individual classes to create desired text style */
+    .red {
+        color: rgb(204,0,0);
+    }
+
+    .blue {
+        color: rgb(8, 82, 148);
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+</style>
+
+<main>
+    
+    <h2>OrthoHealth Systems Patient Journey</h2>
+    <h3>Learn More About the Patient Journey</h3>
+    <p class="para">Paragraph Text</p>
+    <hr>
+
+    <p class="para bold">[ Text Styling Classes ]</p>
+    <ul>
+        <li><span class="blue">blue</span></li>
+        <li><span class="red">red</span></li>
+    </ul>
+
+    <ul>
+        <li><span class="bold blue">bold blue</span></li>
+        <li><span class="bold red">bold red</span></li>
+    </ul>
+
+    <ul>
+        <li><span class="italic blue">italic blue</span></li>
+        <li><span class="italic red">italic red</span></li>
+    </ul>
+
+    <ul>
+        <li><span class="bold">bold</span></li>
+        <li><span class="italic">italic</span></li>
+        <li><span class="bold italic">bold italic</span></li>
+    </ul>
+
+    <hr>
+    <p class="para bold">[ .tab Class Examples ]</p>
+    <p class="para">Visit the <span class="tab">Home</span> tab.</p>
+    <p class="para">You can find that located in the <span class="tab">Resources</span> tab.</p>
+    <hr>
+
+
+    <!--Accordion HTML-->
+    <p class="para bold">[ Accordion Example ]</p>
+    <button class="accordion">Panel Title #1</button>
+    <div class="panels">
+        <div class="panelPad">
+            <p>Panel Text</p>
+        </div>
+    </div>
+
+    <button class="accordion">Panel Title #2</button>
+    <div class="panels">
+        <div class="panelPad">
+            <p>Panel Text</p>
+        </div>
+    </div>
+
+    <button class="accordion">Panel Title #3</button>
+    <div class="panels">
+        <div class="panelPad">
+            <p>Panel Text</p>
+        </div>
+    </div>
+</main>
+
+<!--Accordion JavaScript-->
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("activeText");
+            var panels = this.nextElementSibling;
+            if (panels.style.maxHeight) {
+                panels.style.maxHeight = null;
+            } else {
+                panels.style.maxHeight = panels.scrollHeight + 24 + "px";
+            }
+        });
+    }
+</script>
+
+
